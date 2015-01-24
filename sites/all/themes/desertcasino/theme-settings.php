@@ -2,16 +2,16 @@
 
 /**
  * @file
- * Theme settings file for the desertcasino theme.
+ * Implimentation of hook_form_system_theme_settings_alter()
+ *
+ * To use replace "desertcasino" with your themeName and uncomment by
+ * deleting the comment line to enable.
+ *
+ * @param $form: Nested array of form elements that comprise the form.
+ * @param $form_state: A keyed array containing the current state of the form.
  */
-
-require_once dirname(__FILE__) . '/template.php';
-
-/**
- * Implements hook_form_FORM_alter().
- */
-function desertcasino_form_system_theme_settings_alter(&$form, $form_state) {
-  // You can use this hook to append your own theme settings to the theme
-  // settings form for your subtheme. You should also take a look at the
-  // 'extensions' concept in the Omega base theme.
+/* -- Delete this line to enable.
+function desertcasino_form_system_theme_settings_alter(&$form, &$form_state)  {
+  // Your knarly custom theme settings go here...
 }
+// */

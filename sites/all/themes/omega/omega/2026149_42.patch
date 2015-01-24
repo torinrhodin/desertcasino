@@ -1,0 +1,15 @@
+diff --git a/omega/template.php b/omega/template.php
+index 2fe29bb..88811dd 100644
+--- a/omega/template.php
++++ b/omega/template.php
+@@ -5,7 +5,9 @@
+  * Template overrides and (pre-)process hooks for the Omega base theme.
+  */
+ 
+-require_once dirname(__FILE__) . '/includes/omega.inc';
++if (!function_exists('omega_theme_get_setting')) {
++  require_once dirname(__FILE__) . '/includes/omega.inc';
++}
+ require_once dirname(__FILE__) . '/includes/scripts.inc';
+ 
+ // Include the main extension file for every enabled extension.
